@@ -26,7 +26,8 @@ export default {
     return {
       title: 'Users'
     }
-  }
+  },
+  auth: false
 }
 </script>
 
