@@ -7,7 +7,7 @@
     <h2 class="info">
       {{ vacation.name }}
     </h2>
-    <nuxt-link class="button" to="/about">
+    <nuxt-link class="button" to="/vacations">
       Vacations
     </nuxt-link>
   </section>
@@ -17,7 +17,7 @@
 import axios from '~/plugins/axios'
 
 export default {
-  name: 'aboutid',
+  name: 'id',
   asyncData ({ params, error }) {
     return axios.get('/api/vacations/' + params.id)
       .then((res) => {

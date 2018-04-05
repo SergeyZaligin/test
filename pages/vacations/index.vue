@@ -2,11 +2,11 @@
   <section class="container">
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1 class="title">
-      About
+      Vacations
     </h1>
     <ul class="vacations">
       <li v-for="(vacation, index) in vacations" :key="index" class="vacation">
-        <nuxt-link :to="{ name: 'id', params: { id: about }}">
+        <nuxt-link :to="`/vacations/view/${index}`">
           {{ vacation.name }}
         </nuxt-link>
       </li>
@@ -24,7 +24,7 @@ export default {
   },
   head () {
     return {
-      title: 'About'
+      title: 'Vacations'
     }
   }
 }
